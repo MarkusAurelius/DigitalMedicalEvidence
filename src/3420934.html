@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Load connect from CDN -->
+    <script src="https://unpkg.com/uport-connect/dist/uport-connect.js"></script>
+  </head>
+  <body>
+    <div id="msg">
+      Bitte scannen Sie den QR-Code mit Ihrer uPort-App um den digitalen Befund auf Ihr Smartphone zu laden.
+    </div>
+    <script type="text/javascript">
+     //////////////////////////////
+     //  Configure connect object
+     /////////////////////////////
+
+     const Connect = window.uportconnect
+     const uport = new Connect('Gesundheitsministerium')
+
+     const reqID = 'disclosureReq'
+
+     uport.requestDisclosure()
+
+     uport.onResponse('disclosureReq').then(res => {
+       json = JSON.stringify(res.payload)
+       console.log(json)
+       document.querySelector('#msg').innerHTML = "Gratulation! Sie sind nun eingeloggt..  Here is your DID identifier:  " + json
+     })
+
+     uport.sendVerification({exp: Math.floor(new Date().getTime() / 1000) + 30 * 24 * 60 * 60,
+                             claim: {'Digitaler Befund' : {'Befund Ihres Corona Tests' : `positiv`}}
+     })
+    
+    </script>
+  </body>
+</html>

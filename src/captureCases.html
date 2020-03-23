@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Gesundheitsamt - Befunderfassung</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <img width="150px" height="400px" src="images/gesundheitsamt.jpg" alt="logo" style="width:50%;"/>
+    <div class="container">
+
+        <h1>Erfassung eines Befundes</h1>
+
+        <h2 id="tokenpurchase"></h2>
+
+        <label for="name">Test ID</label>
+        <input id="caseId" type="number"></input>
+        
+        <form>
+            <p>Welches Testergebnis liegt vor:</p>
+            <fieldset>
+              <input type="radio" id="ng" name="Befund" value="Negativ">
+              <label for="ng"> Negativ</label> <br/>
+              <input type="radio" id="ps" name="Befund" value="Positiv">
+              <label for="ps"> Positiv</label> <br/>
+              <input type="radio" id="an" name="Befund" value="Immun">
+              <label for="ae"> Immun (Anti-Körper nachweisbar)</label> <br/>
+            </fieldset>
+          </form>
+        
+
+        <!--button id="button">Purchase Tokens</button-->
+        <button class="btn-submit" type="button" data-id="0">Versenden</button></p><br/>
+        <span id="success"></span><br/>
+
+    </div>
+
+    <!--script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/captureCases.js"></script>
+
+</body>
+</html>
