@@ -26,7 +26,7 @@ Moreover it will be also possible to store each medical evidence record to a blo
 
 A public authority, health office or institute creates a digital certificate based on the result of a conducted Corona test.
 This certificate will be issued to the belonging user / citizen the test was performed for.
-Successively the user will be able to store this digital document on an identiy wallet such as uPort or Jolocom, which he has to intall prior this activity.
+Successively the user will be able to store this digital document on an identiy wallet such as uPort or Jolocom, which he has to intall prior to this activity.
 It is in addition conceivable that a positive medical evidence changes after (let's assume) four weeks automatically to the status 'immune' in case no complications occured during his infection.
 ![Alt text](/src/images/Digital_Evidence_Ablauf_Diagramm.png?raw=true "Process Flow Chart")
 
