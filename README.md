@@ -43,6 +43,9 @@ It was built with
 * NodeJS
 * Express
 * 3rd party libraries (uPort)
+* Self-Sovereign-Identity
+* Decentralized Identity (DID)
+* Verifiable Claims
 
 ## Accomplishments
 
