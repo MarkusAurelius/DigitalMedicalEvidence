@@ -58,7 +58,7 @@ How versatile the use cases are in the context
 Building services on top such as
 * personalized health information for positive tested persons (depending on the medical evidence)
 * can be used as a proof of health before starting an occupation in social or medical care professions
-* tracking (based on the mobile carrier cell) please in order to identify infection clusters
+* tracking (only based on the mobile carrier cell) in order to identify infection clusters
 * in case of ongoing and repeated curfews. If a person is able to proof that he is already immune he may be allowed to behave liberately in the public    (what may admittedly incentivize wrong behavior such as self infection)
 
 
