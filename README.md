@@ -53,8 +53,6 @@ This project was developed with the following environment:
 
 - Ubuntu 18.04.2 LTS
 - npm 6.9.0
-- Truffle v5.1.8 (core: 5.1.8)
-- Solidity v0.5.0 (solc-js)
 - Node v10.16.3
 - Web3.js v1.2.5
 - Ngrok 3.2.7
