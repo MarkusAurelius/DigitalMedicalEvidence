@@ -47,6 +47,25 @@ It was built with
 * Decentralized Identity (DID)
 * Verifiable Claims
 
+## Getting Started
+
+This project was developed with the following environment:
+
+- Ubuntu 18.04.2 LTS
+- npm 6.9.0
+- Truffle v5.1.8 (core: 5.1.8)
+- Solidity v0.5.0 (solc-js)
+- Node v10.16.3
+- Web3.js v1.2.5
+- Ngrok 3.2.7
+- Express 4.17.1
+
+#### Uport
+```.sh
+npm install --save ngrok express path
+```
+
+
 ## Accomplishments
 
 It's a relative simple solution that was implemented based on official technical standards.
